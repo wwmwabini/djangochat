@@ -12,12 +12,12 @@
     <div class="text-center">
         <button class="btn btn-lg btn-primary" type="submit"> Register</button>
     </div>
-    <div class="text-center mt-5">
-        <small>Already have an account? Login instead </small>
-        <div>
-            <a class="btn btn-sm btn-secondary" href="{% url 'user-login'%}">Login</a>
-        </div>
-    </div>
 </form>
+<div class="text-center mt-4">
+    <small>Already have an account? Login instead </small>
+    <div>
+        <a class="btn btn-sm btn-secondary" href="{% url 'user-login'%}">Login</a>
+    </div>
+</div>
 </div>
 {% endblock content %}

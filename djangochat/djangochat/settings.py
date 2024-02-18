@@ -83,8 +83,6 @@ DATABASES = {
     }
 }
 
-AUTH_USER_MODEL = 'users.CustomUser'
-AUTHENTICATION_BACKENDS = ['users.backends.EmailBackend']
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -110,6 +108,9 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+LOGIN_URL = 'user-login'
+LOGIN_REDIRECT_URL = 'room'
 
 LANGUAGE_CODE = 'en-us'
 
